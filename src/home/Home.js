@@ -1,6 +1,6 @@
 import React from "react";
-import NavHome from "../component/NavHome";
-import SliderHome from "../component/SliderHome";
+import NavHome from "../components/NavHome";
+import SliderHome from "../components/SliderHome";
 
 function Home() {
   return (
