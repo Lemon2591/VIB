@@ -2,10 +2,14 @@ import React from "react";
 import Banner from "../components/Banner";
 import FeatureCard from "../components/FeatureCard";
 import FormInfo from "../components/FormInfo";
+import Copyright from "../components/Copyright";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 const HouseLandPage = () => {
   return (
     <div>
+      <Nav />
       <Banner />
       <div className="bg-[rgba(240,248,255)] relative pb-[6.4rem]">
         <div className="text-center mb-[3.2rem] mt-[0.8rem]">
@@ -34,17 +38,19 @@ const HouseLandPage = () => {
         </h1>
         <FormInfo />
       </div>
-      <div className="container mx-auto text-black">
-        <p className="text-[#1e4a84] text-[1.8rem]">Lưu ý:</p>
-        <p className="ml-[1.2rem] italic text-[1.5rem]">
+      <div className="container mx-auto text-black font-semibold mb-20">
+        <p className="text-[#1e4a84] text-[1.8rem] leading-7">Lưu ý:</p>
+        <p className="ml-[1.2rem] italic text-[1.4rem] leading-[22px]">
           - Số tiền trả hàng tháng được tạm tính dựa trên lãi suất tại thời điểm
           tính (Lãi suất có thể thay đổi vào thời điểm nộp hồ sơ).
         </p>
-        <p className="ml-[1.2rem] italic text-[1.5rem]">
+        <p className="ml-[1.2rem] italic text-[1.4rem] leading-[22px]">
           - Công cụ tính toán chỉ mang tính chất tham khảo và không phải là cam
           kết khoản vay của VPBank.
         </p>
       </div>
+      <Footer />
+      <Copyright />
     </div>
   );
 };

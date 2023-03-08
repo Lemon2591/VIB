@@ -2,11 +2,12 @@ import { Form, Input, Select } from "antd";
 import React, { useState } from "react";
 import CalcMoneyRent from "./CalcMoneyRent";
 const FormInfo = () => {
+  const [form] = Form.useForm();
   const [hasVendorSupported, setHasVendorSupported] = useState(false);
 
   return (
     <div className="container mx-auto">
-      <Form>
+      <Form form={form}>
         <div>
           <div className="flex justify-start items-center gap-x-3">
             <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#1e4a84]">
@@ -26,7 +27,9 @@ const FormInfo = () => {
                 />
               </Form.Item>
               <div className="absolute -mt-1 -top-4 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-                <span className="-mt-2">Họ và tên</span>
+                <span className="-mt-2 text-[rgb(136,_136,_136)] text-[1.4rem]">
+                  Họ và tên
+                </span>
                 <span className="text-[#ff0000]">*</span>
               </div>
             </div>
@@ -39,7 +42,9 @@ const FormInfo = () => {
                 />
               </Form.Item>
               <div className="absolute -mt-1 -top-4 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-                <span className="-mt-2">Nơi ở hiện tại</span>
+                <span className="-mt-2 text-[rgb(136,_136,_136)] text-[1.4rem]">
+                  Nơi ở hiện tại
+                </span>
                 <span className="text-[#ff0000]">*</span>
               </div>
             </div>
@@ -51,7 +56,9 @@ const FormInfo = () => {
                 />
               </Form.Item>
               <div className="absolute -mt-1 -top-4 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-                <span className="-mt-2">Số điện thoại</span>
+                <span className="-mt-2 text-[rgb(136,_136,_136)] text-[1.4rem]">
+                  Số điện thoại
+                </span>
                 <span className="text-[#ff0000]">*</span>
               </div>
             </div>
@@ -63,7 +70,9 @@ const FormInfo = () => {
                 />
               </Form.Item>
               <div className="absolute -mt-1 -top-4 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-                <span className="-mt-1">Email</span>
+                <span className="-mt-1 text-[rgb(136,_136,_136)] text-[1.4rem]">
+                  Email
+                </span>
               </div>
             </div>
           </div>
@@ -82,7 +91,9 @@ const FormInfo = () => {
                 />
               </Form.Item>
               <div className="absolute -mt-1 -top-4 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-                <span className="-mt-2">Tài sản thế chấp</span>
+                <span className="-mt-2  text-[rgb(136,_136,_136)] text-[1.4rem]">
+                  Tài sản thế chấp
+                </span>
                 <span className="text-[#ff0000]">*</span>
               </div>
             </div>
@@ -130,7 +141,9 @@ const FormInfo = () => {
                   />
                 </Form.Item>
                 <div className="absolute -mt-1 -top-4 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-                  <span className="-mt-2">Thông tin chi nhánh hỗ trợ</span>
+                  <span className="-mt-2  text-[rgb(136,_136,_136)] text-[1.4rem]">
+                    Thông tin chi nhánh hỗ trợ
+                  </span>
                 </div>
               </div>
             )}
@@ -139,8 +152,8 @@ const FormInfo = () => {
         <button className="mb-[0.8rem] mt-[1.6rem] font-semibold text-center mx-auto text-[1.6rem] px-[4.8rem] rounded-[2.6rem] h-[4.8rem] z-10 bg-[linear-gradient(80deg,_#233f82,_#1fb14f_80%)] text-white">
           Đăng ký
         </button>
+        <CalcMoneyRent form={form} />
       </Form>
-      <CalcMoneyRent />
     </div>
   );
 };

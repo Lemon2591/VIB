@@ -1,9 +1,15 @@
-import { Input, Slider } from "antd";
-import React, { useState } from "react";
+import { Form, Input, Slider } from "antd";
+import React, { useEffect, useState } from "react";
 
-const CalcMoneyRent = () => {
+const CalcMoneyRent = ({ form }) => {
   const [moneyRent, setMoneyRent] = useState(100000000);
-  const [years, setYears] = useState(0);
+  const [years, setYears] = useState(1);
+
+  useEffect(() => {
+    form.setFieldsValue({
+      moneyRent: formatCurrencyInput(moneyRent),
+    });
+  }, [form, moneyRent]);
 
   function formatMoneyToString(value) {
     if (value >= 1000000000) {
@@ -24,14 +30,27 @@ const CalcMoneyRent = () => {
   }
 
   function formatCurrencyInput(number) {
-    const formatter = new Intl.NumberFormat("vi-VN", {
-      style: "currency",
-      currency: "VND",
-      minimumFractionDigits: 0,
-    });
-    return formatter.format(number).slice(0);
+    let numStr = number?.toString();
+    let groups = [];
+    while (numStr.length > 0) {
+      groups.unshift(numStr.slice(-3));
+      numStr = numStr.slice(0, -3);
+    }
+    return groups.join(".");
   }
 
+  const validateMoneyRent = (rule, value, callback) => {
+    const intValue = parseInt(value?.split(".")?.join(""));
+    if (!intValue) {
+      return Promise.reject("Vui lòng nhập số tiền vay");
+    } else if (intValue < 100000000) {
+      return Promise.reject("Số tiền vay tối thiểu là 100.000.000 đồng");
+    } else if (intValue > 20000000000) {
+      return Promise.reject("Số tiền vay tối đa là 20.000.000.000 đồng");
+    } else {
+      return Promise.resolve();
+    }
+  };
   return (
     <>
       <div className="text-left py-[1.6rem]">
@@ -42,12 +61,20 @@ const CalcMoneyRent = () => {
       <div className="grid grid-cols-3 gap-x-6 mt-[2.4rem] mb-[2.4rem]">
         <div className="custom-slider">
           <Slider
+            // dotStyle={{ backgroundColor: "#ff0000" }}
             value={moneyRent}
             defaultValue={0}
             min={100000000}
             step={1000000}
             max={50000000000}
             onChange={setMoneyRent}
+            trackStyle={{
+              backgroundColor: "#1fb14f",
+            }}
+            handleStyle={{
+              backgroundColor: "#1fb14f",
+              // boxShadow: "0 0 0 2px #1fb14f",
+            }}
             tooltip={{
               open: true,
               formatter: () => (
@@ -69,6 +96,13 @@ const CalcMoneyRent = () => {
             min={1}
             max={25}
             onChange={setYears}
+            trackStyle={{
+              backgroundColor: "#1fb14f",
+            }}
+            handleStyle={{
+              backgroundColor: "#1fb14f",
+              // boxShadow: "0 0 0 2px #1fb14f",
+            }}
             tooltip={{
               open: true,
               formatter: () => (
@@ -86,36 +120,64 @@ const CalcMoneyRent = () => {
       </div>
       <div className="grid grid-cols-3 gap-x-6 mt-[2.4rem] mb-[2.4rem]">
         <div className="relative">
-          <Input
-            suffix="VNĐ"
-            value={formatCurrencyInput(moneyRent)}
-            className="h-[4.7rem] text-[1.6rem]"
-            placeholder="Nhập họ và tên"
-          />
+          <Form.Item
+            name="moneyRent"
+            rules={[
+              {
+                required: true,
+                message:
+                  "Vui lòng nhập số tiền vay từ 100.000.000 đến 20.000.000.000 VNĐ",
+              },
+              {
+                validator: validateMoneyRent,
+              },
+            ]}
+            validateTrigger="onChange"
+          >
+            <Input
+              suffix="VNĐ"
+              onChange={(e) => {
+                const money = e.target.value?.split(".").join("");
+                setMoneyRent(parseInt(money));
+              }}
+              className="h-[4.7rem] text-[1.6rem]"
+              placeholder="Nhập họ và tên"
+            />
+          </Form.Item>
           <div className="absolute -mt-1 z-50 -top-1 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-            <span className="-mt-2 text-[1.4rem]">Số tiền vay</span>
+            <span className="-mt-2 text-[1.4rem] text-[rgb(136,_136,_136)]">
+              Số tiền vay
+            </span>
           </div>
         </div>
         <div className="relative">
-          <Input
-            suffix="năm"
-            value={years}
-            className="h-[4.7rem] text-[1.6rem]"
-            placeholder="Nhập họ và tên"
-          />
+          <Form.Item>
+            <Input
+              suffix="năm"
+              value={years}
+              className="h-[4.7rem] text-[1.6rem]"
+              placeholder="Nhập họ và tên"
+            />
+          </Form.Item>
           <div className="absolute -mt-1 z-50 -top-1 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-            <span className="-mt-2 text-[1.4rem]">Thời hạn vay</span>
+            <span className="-mt-2 text-[1.4rem] text-[rgb(136,_136,_136)]">
+              Thời hạn vay
+            </span>
           </div>
         </div>
-        <div className="relative">
-          <Input
-            suffix="VNĐ"
-            value={formatCurrencyInput(moneyRent)}
-            className="h-[4.7rem] text-[1.6rem]"
-            placeholder="Nhập họ và tên"
-          />
+        <div className="relative ">
+          <Form.Item>
+            <Input
+              suffix="VNĐ"
+              disabled
+              value={formatCurrencyInput(moneyRent)}
+              className="h-[4.7rem] text-[1.6rem]"
+            />
+          </Form.Item>
           <div className="absolute -mt-1 z-50 -top-1 left-5 bg-white px-1 py-1 flex justify-center items-center gap-x-3">
-            <span className="-mt-2 text-[1.4rem]">Số tiền trả hàng tháng</span>
+            <span className="-mt-2 text-[1.4rem] text-[rgb(136,_136,_136)]">
+              Số tiền trả hàng tháng
+            </span>
           </div>
         </div>
       </div>
