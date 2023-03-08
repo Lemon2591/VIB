@@ -4,7 +4,7 @@ import Logo from "../assets/img/logo.png";
 // import vay_kinh_doanh from "../assets/img/vaymuadat.jpeg"
 import { AiFillFacebook } from "react-icons/ai"
 import { SiZalo } from "react-icons/si"
-
+import Footer from "./Footer";
 
 function SliderHome() {
   return (
@@ -81,21 +81,7 @@ function SliderHome() {
           </div>
         </div>
       </div>
-      <div className="footer">
-        <div className="after-footer-content">
-
-          <div className="after-footer-content-text">
-            <p>
-              <a href="">@ 2021 VPBank - Bản quyền đã được bảo hộ</a>
-            </p>
-          </div>
-          <div className="after-footer-content-text">
-            <p>
-              <a href="">Chính sách bảo mật</a>
-            </p>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
