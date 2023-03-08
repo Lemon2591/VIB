@@ -213,14 +213,71 @@
     height: 5px;
     border-radius: 5px;
 } */
-
+/* 
 .custom-slider .ant-slider-track {
     background-color: #1fb14f;
-}
+} */
 
-.custom-slider .ant-slider-handle {
+/* .custom-slider .ant-slider-handle {
     border: none;
     box-shadow: none;
+}
+
+.custom-slider .ant-slider-rail:hover +.ant-slider-track{
+    background-color: #1fb14f;
+}
+.custom-slider .ant-slider:hover .ant-slider-track {
+    background-color: #1fb14f;
+} */
+
+.custom-slider .ant-slider-handle.ant-tooltip-open::after {
+    background-color: #1fb14f;
+    box-shadow: 0 0 0 2px #1fb14f
+}
+
+.ant-input-affix-wrapper-disabled{
+    background-color: white;
+    color: #1fb14f;
+    font-weight: 600;
+}
+
+input.ant-input-disabled {
+    color: #1fb14f !important;
+    font-weight: 600;
+}
+
+.nav-hover{
+    color: inherit;
+    position: relative;
+}
+
+.nav-hover::after{
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #1fb14f;
+    border-radius: 10px;
+    width: 26px;
+}
+
+.nav-hover:hover::after{
+    display: block;
+}
+
+.nav-hover:hover{
+    color: #1fb14f;
+}
+
+.nav-active.nav-hover {
+    color: #1fb14f;
+}
+
+.nav-active.nav-hover::after {
+    display: block;
 }
 
 @media (min-width: 640px) {
