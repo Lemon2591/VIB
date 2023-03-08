@@ -149,6 +149,10 @@
     font-weight: 700;
 }
 
+.after-footer-content-contact {
+    display: flex;
+}
+
 .after-footer-content-contact>a {
     font-size: 2.8rem;
     color: #888;
@@ -235,7 +239,7 @@
     box-shadow: 0 0 0 2px #1fb14f
 }
 
-.ant-input-affix-wrapper-disabled{
+.ant-input-affix-wrapper-disabled {
     background-color: white;
     color: #1fb14f;
     font-weight: 600;
@@ -246,12 +250,12 @@ input.ant-input-disabled {
     font-weight: 600;
 }
 
-.nav-hover{
+.nav-hover {
     color: inherit;
     position: relative;
 }
 
-.nav-hover::after{
+.nav-hover::after {
     content: "";
     display: none;
     position: absolute;
@@ -264,11 +268,11 @@ input.ant-input-disabled {
     width: 26px;
 }
 
-.nav-hover:hover::after{
+.nav-hover:hover::after {
     display: block;
 }
 
-.nav-hover:hover{
+.nav-hover:hover {
     color: #1fb14f;
 }
 

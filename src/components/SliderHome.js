@@ -4,6 +4,7 @@ import Logo from "../assets/img/logo.png";
 // import vay_kinh_doanh from "../assets/img/vaymuadat.jpeg"
 import { AiFillFacebook } from "react-icons/ai"
 import { SiZalo } from "react-icons/si"
+import { NavLink } from "react-router-dom";
 
 
 function SliderHome() {
@@ -15,14 +16,14 @@ function SliderHome() {
       </div>
       <div className="slider-card-content">
         <div className="slider-card-items">
-          <div className="slider-card-item">
+          <NavLink to="/vaymuanha" className="slider-card-item">
             <div className="slider-card-item-img">
               <div></div>
 
               <img src="https://vaythechap.vpbank.com.vn/media/public/2021/10/09/c7e11046-160d-42b7-975e-391f16262de1.jpg" alt="anh" />
             </div>
             <p>Vay mua nhà đất</p>
-          </div>
+          </NavLink>
           <div className="slider-card-item">
             <div className="slider-card-item-img">
               <div></div>
