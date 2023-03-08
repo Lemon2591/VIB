@@ -6,7 +6,9 @@
     align-items: center;
     width: 100%;
     height: 8rem;
-    /* background-image: linear-gradient(80deg, #e94228, #fa9855 80%); */
+    /* background: -webkit-linear-gradient(80deg, #233f82, #1fb14f 87%); */
+    background: -webkit-linear-gradient(80deg, #eff8ff, #c5e6ff 87%);
+    /* background-color: #eff8ff; */
 
 }
 
@@ -19,6 +21,150 @@
     background-size: cover;
 }
 
+.slider-home-content {
+    margin-bottom: 1rem;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.slider-home-content>h1 {
+    background: -webkit-linear-gradient(80deg, #233f82, #1fb14f 87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 1rem 0;
+    line-height: 7rem;
+    font-size: 5.6rem;
+}
+
+.slider-home-content>h4 {
+    color: #1e4a84;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 2.5rem;
+}
+
+.slider-card-item-img {
+    width: 240px;
+}
+
+.slider-card-item-img>img {
+    width: 100%;
+    height: 320px;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.slider-card-items {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 5rem;
+}
+
+.slider-card-item {
+    width: calc(100%);
+    margin: 0 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.slider-card-item:hover {
+    transform: translateY(-15px);
+}
+
+.slider-card-item-img {
+    position: relative;
+}
+
+
+.slider-card-item-img>div {
+    position: absolute;
+    background-color: #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    right: 0;
+    opacity: .5;
+}
+
+.slider-card-item-img>div>p {
+    position: a;
+    color: #fff;
+    z-index: 9999;
+}
+
+.slider-card-item>p {
+    width: 100%;
+    padding-top: 1.5rem;
+    margin: 0;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.slider-card-content {
+    padding-top: 3rem;
+}
+
+.after-footer {
+    background-color: #eff8ff;
+}
+
+.after-footer-content {
+    max-width: 120rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.after-footer-content-img>div {
+    width: 10rem;
+}
+
+.after-footer-content-img>div>img {
+    width: 100%;
+}
+
+.after-footer-content-text>p {
+    margin: 1rem 0;
+    color: #888;
+    font-size: 1.6rem;
+}
+
+
+.after-footer-content-text>.text-home {
+
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.after-footer-content-phone>p {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.after-footer-content-contact>a {
+    font-size: 2.8rem;
+    color: #888;
+    margin: 10px;
+}
+
+.after-footer-content-text>p>a {
+    margin: 1rem 0;
+    color: #888;
+    font-size: 1.6rem;
+}
+
+.after-footer {
+    margin-top: 2.5rem;
+}
+
 .text-gradient {
     background: -webkit-linear-gradient(80deg, #233f82, #1fb14f 87%);
     -webkit-background-clip: text;
@@ -27,7 +173,7 @@
 
 .shadow-card {
     box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .container {
@@ -35,30 +181,31 @@
 }
 
 
-.custom-checkbox .ant-checkbox-inner{
+.custom-checkbox .ant-checkbox-inner {
     width: 18px;
     height: 18px;
 }
 
-.custom-select .ant-select-selector{
+.custom-select .ant-select-selector {
     height: 4.7rem !important;
 }
 
-.custom-select .ant-select-selection-placeholder{
+.custom-select .ant-select-selection-placeholder {
     line-height: 4.7rem !important;
     font-size: 1.6rem;
     text-align: left;
 }
+
 .custom-select input {
     height: 100% !important;
 }
 
-.ant-tooltip-inner{
+.ant-tooltip-inner {
     background-color: transparent !important;
     box-shadow: none !important;
 }
 
-.ant-tooltip-arrow{
+.ant-tooltip-arrow {
     display: none !important;
 }
 
@@ -76,7 +223,7 @@
     box-shadow: none;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .container {
         max-width: 600px;
     }
@@ -94,9 +241,8 @@
     }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
     .container {
         max-width: 1000px;
     }
 }
-
