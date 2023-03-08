@@ -18,3 +18,85 @@
     width: 100%;
     background-size: cover;
 }
+
+.text-gradient {
+    background: -webkit-linear-gradient(80deg, #233f82, #1fb14f 87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shadow-card {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+    width: 100%;
+}
+
+
+.custom-checkbox .ant-checkbox-inner{
+    width: 18px;
+    height: 18px;
+}
+
+.custom-select .ant-select-selector{
+    height: 4.7rem !important;
+}
+
+.custom-select .ant-select-selection-placeholder{
+    line-height: 4.7rem !important;
+    font-size: 1.6rem;
+    text-align: left;
+}
+.custom-select input {
+    height: 100% !important;
+}
+
+.ant-tooltip-inner{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.ant-tooltip-arrow{
+    display: none !important;
+}
+
+/* .custom-slider .ant-slider-rail {
+    height: 5px;
+    border-radius: 5px;
+} */
+
+.custom-slider .ant-slider-track {
+    background-color: #1fb14f;
+}
+
+.custom-slider .ant-slider-handle {
+    border: none;
+    box-shadow: none;
+}
+
+@media (min-width: 640px){
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1280px){
+    .container {
+        max-width: 1000px;
+    }
+}
+
