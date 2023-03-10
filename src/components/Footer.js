@@ -1,33 +1,15 @@
 import React from "react";
-
-// function Footer() {
-//     return (
-//         <div className="footer">
-//             <div className="after-footer-content">
-
-//                 <div className="after-footer-content-text">
-//                     <p>
-//                         <a href="">@ 2021 VIB - Bản quyền đã được bảo hộ</a>
-//                     </p>
-//                 </div>
-//                 <div className="after-footer-content-text">
-//                     <p>
-//                         <a href="">Chính sách bảo mật</a>
-//                     </p>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Footer
-// =======
+import Logo from "../assets/img/logo.png";
+import { AiFillFacebook } from "react-icons/ai";
+import { SiZalo } from "react-icons/si";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f0f8ff]">
-      <div className="container flex justify-between items-center mx-auto h-[25.5rem] md:h-[12.8rem]">
-        <div className="flex justify-between items-center md:items-start w-full gap-x-6 gap-y-10 md:gap-y-0  flex-col md:flex-row ">
+    <>
+      {/* <div className="bg-[#f0f8ff]">
+      <div className="container flex justify-between items-center mx-auto h-[12.8rem]">
+        <div className="flex justify-between items-start w-full">
           <img
             src="https://vaythechap.vpbank.com.vn/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fassets%2Fimgs%2Flogo-vpb.9546b9737de466adda82339a9b5a32c0.png&w=256&q=75"
             alt="x"
@@ -70,7 +52,48 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
+      <div className="after-footer">
+        <div className="after-footer-content">
+          <div className="after-footer-content-img">
+            <div>
+              <img src={Logo} alt="logo" />
+            </div>
+          </div>
+          <div className="after-footer-content-text">
+            <p className="text-home">Ngân Hàng Quốc Tế (VIB)</p>
+            <p>
+              Trụ sở: 111A Pasteur, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh
+            </p>
+          </div>
+          <div className="after-footer-content-phone">
+            <p> Hotline: 1800 8195</p>
+          </div>
+          <div className="after-footer-content-contact">
+            <a href="">
+              <AiFillFacebook />
+            </a>
+            <a href="">
+              <SiZalo />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <div className="after-footer-content">
+          <div className="after-footer-content-text">
+            <p>
+              <a href="">@ 2021 VIB - Bản quyền đã được bảo hộ</a>
+            </p>
+          </div>
+          <div className="after-footer-content-text">
+            <p>
+              <a href="">Chính sách bảo mật</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
