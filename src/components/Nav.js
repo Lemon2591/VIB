@@ -54,7 +54,7 @@ const Nav = () => {
   };
   return (
     <div className="px-4 md:px-0 flex flex-row  md:flex-col justify-between md:justify-center items-center pt-[0.4rem] pb-[0.8rem] ">
-      <img src={Logo} className="w-[17.6rem] h-[4rem]" alt="xxx" />
+      <img src={Logo} className="w-[12.6rem]" alt="xxx" />
       <div className="menu-icon md:hidden" onClick={handleOpenMenu}>
         <div className={`line line1 ${showMenu && "change"}`}></div>
         <div className={`line line2 ${showMenu && "change"}`}></div>
@@ -73,10 +73,9 @@ const Nav = () => {
                   }}
                 >
                   <li
-                    className={`${
-                      index < navRoute.length - 1 &&
+                    className={`${index < navRoute.length - 1 &&
                       "border-r border-solid border-[#aaa]"
-                    } px-3 lg:px-5 text-center`}
+                      } px-3 lg:px-5 text-center`}
                   >
                     {route.title}
                   </li>
@@ -100,10 +99,9 @@ const Nav = () => {
               key={index}
               to={route.path}
               className={({ isActive }) => {
-                return `py-3 px-8 flex justify-start items-center gap-x-6 text-[#888] w-full ${
-                  isActive &&
+                return `py-3 px-8 flex justify-start items-center gap-x-6 text-[#888] w-full ${isActive &&
                   "text-[#069e4e] font-bold bg-[#e6f5ed] rounded-r-[80px]"
-                }`;
+                  }`;
               }}
             >
               <img src={route.icon} alt="logo" className="min-w-[28px]" />

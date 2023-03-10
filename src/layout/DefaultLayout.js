@@ -9,7 +9,7 @@ const DefaultLayout = ({ children }) => {
       <Nav />
       <main>{children}</main>
       <Footer />
-      <Copyright />
+      {/* <Copyright /> */}
     </>
   );
 };
