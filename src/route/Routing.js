@@ -1,6 +1,7 @@
 import Home from "../home/Home";
 import DefaultLayout from "../layout/DefaultLayout";
 import Loan from "../pages/Loan";
+import Combo from "../pages/Combo";
 const Routing = [
   {
     path: "/",
@@ -16,7 +17,7 @@ const Routing = [
     DefaultLayout: DefaultLayout,
   },
   {
-    path: "/vaykinhdoanh",
+    path: "/vaykinhdoanhthechap",
     dataKey: "Business",
     Component: Loan,
     DefaultLayout: DefaultLayout,
@@ -34,10 +35,16 @@ const Routing = [
     DefaultLayout: DefaultLayout,
   },
   {
-    path: "/vaytieudung",
+    path: "/vaytieudungthechap",
     dataKey: "Consumption",
     Component: Loan,
     DefaultLayout: DefaultLayout,
+  },
+  {
+    path: "/combouudai",
+    dataKey: "Consumption",
+    Component: Combo,
+    DefaultLayout: null,
   },
 ];
 

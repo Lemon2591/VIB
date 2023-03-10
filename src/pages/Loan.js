@@ -28,7 +28,7 @@ const HouseLandPage = ({ pageData }) => {
           alt="x"
         />
       </div>
-      <div className="bg-white mb-[6.4rem] text-center">
+      <div className="bg-white mb-[6.4rem] text-center px-2">
         <h1 className="font-bold mb-[1.6rem] leading-[8rem] text-gradient text-[4.8rem] md:text-[6rem] mt-0">
           {pageData?.loanType}
         </h1>

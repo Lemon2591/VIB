@@ -313,6 +313,10 @@ input.ant-input-disabled {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.custom-drawer .ant-drawer-body{
+    padding: 0;
+}
+
 @media (min-width: 640px) {
     .container {
         max-width: 600px;
@@ -322,6 +326,9 @@ input.ant-input-disabled {
 @media (min-width: 768px) {
     .container {
         max-width: 700px;
+    }
+    .menu-icon{
+        display: none;
     }
 }
 
