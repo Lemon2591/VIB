@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/img/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -8,39 +9,39 @@ const Nav = () => {
       <div className="w-full text-[1.6rem] text-[#888] font-semibold py-[0.4rem]">
         <div className="mx-auto max-w-max">
           <ul className="flex justify-between items-center">
-            <a href="/" className="py-[1.6rem] nav-hover">
+            <NavLink to="/" className="py-[1.6rem] nav-hover">
               <li className="border-r border-solid border-[#aaa] px-5">
                 Trang chủ
               </li>
-            </a>
-            <a href="/" className="py-[1.6rem] nav-hover nav-active" >
+            </NavLink>
+            <NavLink to="/vaymuanha" className="py-[1.6rem] nav-hover nav-active" >
               <li className="border-r border-solid border-[#aaa] px-5">
                 Vay mua nhà đất
               </li>
-            </a>
-            <a href="/" className="py-[1.6rem] nav-hover">
+            </NavLink>
+            <NavLink to="/vaykinhdoanhthechap" className="py-[1.6rem] nav-hover">
               <li className="border-r border-solid border-[#aaa] px-5">
                 Vay kinh doanh thế chấp
               </li>
-            </a>
-            <a href="/" className="py-[1.6rem] nav-hover">
+            </NavLink>
+            <NavLink to="/vaymuaoto" className="py-[1.6rem] nav-hover">
               <li className="border-r border-solid border-[#aaa] px-5">
                 Vay mua ô tô
               </li>
-            </a>
-            <a href="/" className="py-[1.6rem] nav-hover">
+            </NavLink>
+            <NavLink to="/vaymuanhaduan" className="py-[1.6rem] nav-hover">
               <li className="border-r border-solid border-[#aaa] px-5">
                 Vay mua nhà dự án
               </li>
-            </a>
-            <a href="/" className="py-[1.6rem] nav-hover">
+            </NavLink>
+            <NavLink to="/vaytieudungthechap" className="py-[1.6rem] nav-hover">
               <li className="border-r border-solid border-[#aaa] px-5">
                 Vay tiêu dùng thế chấp
               </li>
-            </a>
-            <a href="/" className="py-[1.6rem] nav-hover">
+            </NavLink>
+            <NavLink to="/combouudai" className="py-[1.6rem] nav-hover">
               <li className=" px-5">Combo ưu đãi sản phẩm vay</li>
-            </a>
+            </NavLink>
           </ul>
         </div>
       </div>

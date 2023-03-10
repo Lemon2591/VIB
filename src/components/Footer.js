@@ -1,8 +1,13 @@
 import React from "react";
+import Logo from "../assets/img/logo.png";
+import { AiFillFacebook } from "react-icons/ai"
+import { SiZalo } from "react-icons/si"
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f0f8ff]">
+    <>
+      {/* <div className="bg-[#f0f8ff]">
       <div className="container flex justify-between items-center mx-auto h-[12.8rem]">
         <div className="flex justify-between items-start w-full">
           <img
@@ -47,7 +52,44 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
+      <div className="after-footer">
+        <div className="after-footer-content">
+          <div className="after-footer-content-img">
+            <div>
+              <img src={Logo} alt="logo" />
+            </div>
+          </div>
+          <div className="after-footer-content-text">
+            <p className="text-home">Ngân Hàng Quốc Tế (VIB)</p>
+            <p>
+              Trụ sở: 111A Pasteur, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+          </div>
+          <div className="after-footer-content-phone">
+            <p>  Hotline: 1800 8195</p>
+          </div>
+          <div className="after-footer-content-contact">
+            <a href=""><AiFillFacebook /></a>
+            <a href=""><SiZalo /></a>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <div className="after-footer-content">
+
+          <div className="after-footer-content-text">
+            <p>
+              <a href="">@ 2021 VIB - Bản quyền đã được bảo hộ</a>
+            </p>
+          </div>
+          <div className="after-footer-content-text">
+            <p>
+              <a href="">Chính sách bảo mật</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

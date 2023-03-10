@@ -276,11 +276,11 @@ input.ant-input-disabled {
     color: #1fb14f;
 }
 
-.nav-active.nav-hover {
+.active.nav-hover {
     color: #1fb14f;
 }
 
-.nav-active.nav-hover::after {
+.active.nav-hover::after {
     display: block;
 }
 
