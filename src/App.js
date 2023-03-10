@@ -1,9 +1,8 @@
 import React from "react";
-import Home from "./home/Home";
-import HouseLandPage from "./pages/HouseLandPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Routing from "./route/Routing";
 import RoutePub from "./route/Route";
+import { pageData } from "./data";
 
 function App() {
   return (
@@ -13,12 +12,21 @@ function App() {
         <Routes>
           <Route exact={true} path="/" element={<RoutePub />}>
             {Routing.map((privateRoute, index) => {
-              const { path, Component, exact } = privateRoute;
+              const { path, Component, exact, dataKey, DefaultLayout } =
+                privateRoute;
+              const data = pageData.find((page) => page.dataKey === dataKey);
+              const PageComponent = DefaultLayout ? (
+                <DefaultLayout>
+                  <Component pageData={data} />
+                </DefaultLayout>
+              ) : (
+                <Component />
+              );
               return (
                 <Route
                   key={index}
                   path={path}
-                  element={<Component />}
+                  element={PageComponent}
                   exact={`${exact}`}
                 />
               );

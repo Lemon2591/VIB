@@ -8,7 +8,7 @@ const FormInfo = () => {
   return (
     <div className="container mx-auto">
       <Form form={form}>
-        <div>
+        <div className="px-10 571px:px-0">
           <div className="flex justify-start items-center gap-x-3">
             <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#1e4a84]">
               Thông tin khách hàng
@@ -18,7 +18,7 @@ const FormInfo = () => {
               thông tin nhập bắt buộc
             </span>
           </div>
-          <div className="grid grid-cols-4 gap-x-6">
+          <div className="grid 571px:grid-cols-2 md:grid-cols-4 gap-x-6">
             <div className="relative">
               <Form.Item>
                 <Input
@@ -77,11 +77,11 @@ const FormInfo = () => {
             </div>
           </div>
         </div>
-        <div className="text-left">
+        <div className="text-left px-10 571px:px-0">
           <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#1e4a84]">
             Thông tin khoản vay
           </p>
-          <div className="grid grid-cols-4 gap-x-3">
+          <div className="grid 571px:grid-cols-2 md:grid-cols-4 gap-x-3">
             <div className="relative custom-select">
               <Form.Item>
                 <Select
@@ -99,10 +99,10 @@ const FormInfo = () => {
             </div>
             <div className="px-5">
               <p className="text-[#1eb14f] font-semibold">Chi nhánh hỗ trợ?</p>
-              <div className="flex items-center pt-[0.5rem]">
+              <div className="flex items-center gap-x-5 pt-[0.5rem]">
                 <div
                   onClick={() => setHasVendorSupported(true)}
-                  className="flex w-1/2 text-left justify-start items-center gap-2 cursor-pointer"
+                  className="flex 572px:w-1/2 text-left justify-start items-center gap-2 cursor-pointer"
                 >
                   <img
                     className="w-[18px] h-[18px]"
@@ -117,7 +117,7 @@ const FormInfo = () => {
                 </div>
                 <div
                   onClick={() => setHasVendorSupported(false)}
-                  className="flex w-1/2 text-left justify-start items-center gap-2 cursor-pointer"
+                  className="flex 571px:w-1/2 text-left justify-start items-center gap-2 cursor-pointer"
                 >
                   <img
                     className="w-[18px] h-[18px]"
@@ -133,7 +133,7 @@ const FormInfo = () => {
               </div>
             </div>
             {hasVendorSupported && (
-              <div className="relative custom-select">
+              <div className="relative custom-select mt-10 571px:mt-0">
                 <Form.Item>
                   <Select
                     className="h-[4.7rem] text-[1.6rem]"

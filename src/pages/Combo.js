@@ -11,7 +11,7 @@ function Combo() {
     return (
         <div>
             <Nav />
-            <Banner />
+            {/* <Banner />
             <div className="bg-[rgba(240,248,255)] relative pb-[6.4rem]">
                 <div className="text-center mb-[3.2rem] mt-[0.8rem]">
                     <h1 className="font-bold mb-[1.6rem] leading-[8rem] text-gradient text-[6rem] mt-0">
@@ -49,7 +49,7 @@ function Combo() {
                     - Công cụ tính toán chỉ mang tính chất tham khảo và không phải là cam
                     kết khoản vay của VPBank.
                 </p>
-            </div>
+            </div> */}
             <Footer />
 
         </div>
