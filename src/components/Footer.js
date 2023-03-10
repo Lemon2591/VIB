@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React from "react";
 
 // function Footer() {
 //     return (
@@ -27,8 +26,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="bg-[#f0f8ff]">
-      <div className="container flex justify-between items-center mx-auto h-[12.8rem]">
-        <div className="flex justify-between items-start w-full">
+      <div className="container flex justify-between items-center mx-auto h-[25.5rem] md:h-[12.8rem]">
+        <div className="flex justify-between items-center md:items-start w-full gap-x-6 gap-y-10 md:gap-y-0  flex-col md:flex-row ">
           <img
             src="https://vaythechap.vpbank.com.vn/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fassets%2Fimgs%2Flogo-vpb.9546b9737de466adda82339a9b5a32c0.png&w=256&q=75"
             alt="x"
@@ -76,4 +75,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

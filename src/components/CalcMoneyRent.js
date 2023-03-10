@@ -52,13 +52,13 @@ const CalcMoneyRent = ({ form }) => {
     }
   };
   return (
-    <>
+    <div className="px-10 571px:px-0">
       <div className="text-left py-[1.6rem]">
         <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#1e4a84]">
           Công cụ tính khoản vay (tham khảo)
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-x-6 mt-[2.4rem] mb-[2.4rem]">
+      <div className="hidden md:grid grid-cols-3 gap-x-6 mt-[2.4rem] mb-[2.4rem]">
         <div className="custom-slider">
           <Slider
             // dotStyle={{ backgroundColor: "#ff0000" }}
@@ -118,7 +118,7 @@ const CalcMoneyRent = ({ form }) => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-x-6 mt-[2.4rem] mb-[2.4rem]">
+      <div className="grid md:grid-cols-3 gap-x-6 mt-[2.4rem] mb-[2.4rem]">
         <div className="relative">
           <Form.Item
             name="moneyRent"
@@ -181,7 +181,7 @@ const CalcMoneyRent = ({ form }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
