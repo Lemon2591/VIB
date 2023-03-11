@@ -30,6 +30,7 @@ const CalcMoneyRent = ({ form }) => {
   }
 
   function formatCurrencyInput(number) {
+    if (!number) return 0;
     let numStr = number?.toString();
     let groups = [];
     while (numStr.length > 0) {
@@ -51,6 +52,20 @@ const CalcMoneyRent = ({ form }) => {
       return Promise.resolve();
     }
   };
+
+  const [hideSlider, setHideSlider] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth < 768 && setHideSlider(true);
+    const resize = (e) => {
+      window.innerWidth < 768 ? setHideSlider(true) : setHideSlider(false);
+    };
+    window.addEventListener("resize", resize);
+    return () => {
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+
   return (
     <div className="px-10 571px:px-0">
       <div className="text-left py-[1.6rem]">
@@ -76,7 +91,7 @@ const CalcMoneyRent = ({ form }) => {
               // boxShadow: "0 0 0 2px #1fb14f",
             }}
             tooltip={{
-              open: true,
+              open: hideSlider ? false : true,
               formatter: () => (
                 <img
                   src="https://vaythechap.vpbank.com.vn/assets/imgs/icon_slider_money.png"
@@ -104,7 +119,7 @@ const CalcMoneyRent = ({ form }) => {
               // boxShadow: "0 0 0 2px #1fb14f",
             }}
             tooltip={{
-              open: true,
+              open: hideSlider ? false : true,
               formatter: () => (
                 <img
                   src="https://vaythechap.vpbank.com.vn/assets/imgs/icon_slider_calendar.png"
