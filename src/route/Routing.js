@@ -44,7 +44,7 @@ const Routing = [
     path: "/combouudai",
     dataKey: "Consumption",
     Component: Combo,
-    DefaultLayout: null,
+    DefaultLayout: DefaultLayout,
   },
 ];
 

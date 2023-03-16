@@ -4,7 +4,7 @@ const Banner = ({ imageSrc }) => {
   return (
     <div className="w-full relative">
       <img
-        className="w-full object-cover object-center min-h-screen md:min-h-fit md:auto"
+        className="w-full object-cover object-center min-h-screen 960px:min-h-fit"
         src={imageSrc}
         alt="x"
       />
