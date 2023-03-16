@@ -353,6 +353,23 @@ input.ant-input-disabled {
     backface-visibility: hidden;
 }
 
+.text-gradient-color-2 {
+    background: -webkit-linear-gradient(0deg, #233f82, #1fb14f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.background-theme {
+    background-image: linear-gradient(80deg, #233f82, #1fb14f 80%);
+}
+
+.VPBank_prime {
+    background-image: url(https://vaythechap.vpbank.com.vn/assets/imgs/bg_01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
 @media (min-width: 640px) {
     .container {
         max-width: 600px;

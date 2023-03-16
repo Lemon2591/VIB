@@ -1,7 +1,8 @@
 import { Form, Input, Select } from "antd";
 import React, { useState } from "react";
 import CalcMoneyRent from "./CalcMoneyRent";
-const FormInfo = () => {
+import LoanInfo from "./LoanInfo";
+const FormInfo = ({ finalPage }) => {
   const [form] = Form.useForm();
   const [hasVendorSupported, setHasVendorSupported] = useState(false);
 
@@ -149,10 +150,11 @@ const FormInfo = () => {
             )}
           </div>
         </div>
-        <button className="mb-[0.8rem] mt-[1.6rem] font-semibold text-center mx-auto text-[1.6rem] px-[4.8rem] rounded-[2.6rem] h-[4.8rem] z-10 bg-[linear-gradient(80deg,_#233f82,_#1fb14f_80%)] text-white">
+        {finalPage && <LoanInfo className="text-center mx-auto " />}
+        <button className="flex items-center mb-[0.8rem] mt-[1.6rem] font-semibold text-center mx-auto text-[1.6rem] px-[4.8rem] rounded-[2.6rem] h-[4.8rem] z-10 bg-[linear-gradient(80deg,_#233f82,_#1fb14f_80%)] text-white">
           Đăng ký
         </button>
-        <CalcMoneyRent form={form} />
+        {!finalPage && <CalcMoneyRent form={form} />}
       </Form>
     </div>
   );

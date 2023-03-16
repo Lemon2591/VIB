@@ -6,7 +6,7 @@ const CalcMoneyRent = ({ form }) => {
   const [years, setYears] = useState(1);
 
   useEffect(() => {
-    form.setFieldsValue({
+    form?.setFieldsValue({
       moneyRent: formatCurrencyInput(moneyRent),
     });
   }, [form, moneyRent]);
