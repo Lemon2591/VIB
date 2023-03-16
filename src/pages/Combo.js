@@ -22,7 +22,7 @@ function Combo() {
           Gói vay thế chấp kinh doanh theo hạn mức
         </h1>
         <div className="background-theme px-10 py-1 max-w-max mx-auto rounded-xl">
-          <p className="text-white font-bold mb-[1.6rem] leading-[5rem] text-[4.8rem]">
+          <p className="text-white font-bold mb-[1.6rem] mt-[1.6rem] leading-[5rem] text-[4.8rem]">
             Combo Business
           </p>
         </div>
