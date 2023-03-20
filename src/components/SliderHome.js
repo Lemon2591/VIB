@@ -25,8 +25,8 @@ function SliderHome() {
                   className="card card-front card-back"
                 />
               </div>
-              <div class="front h-full relative">
-                <div class="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
+              <div className="front h-full relative">
+                <div className="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
                   Vững tin làm chủ cuộc sống với ngôi nhà mơ ước từ khoản vay
                   thế chấp với hạn mức cho vay lên đến 75%, kỳ hạn tối đa đến 25
                   năm. Phê duyệt nhanh chóng chỉ trong 01 ngày.
@@ -36,7 +36,7 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  class="more"
+                  className="more"
                   href="/vaykinhdoanhthechap"
                   className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
                 >
@@ -55,8 +55,8 @@ function SliderHome() {
                   className="card card-front card-back"
                 />
               </div>
-              <div class="front h-full relative">
-                <div class="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
+              <div className="front h-full relative">
+                <div className="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
                   Tự tin kinh doanh, mở rộng quy mô sản xuất – tận hưởng ưu đãi
                   lãi suất từ khoản vay thế chấp với hạn mức cao và phê duyệt
                   nhanh chóng.
@@ -66,7 +66,7 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  class="more"
+                  className="more"
                   href="/vaykinhdoanhthechap"
                   className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
                 >
@@ -87,8 +87,8 @@ function SliderHome() {
                   className="card card-front card-back"
                 />
               </div>
-              <div class="front h-full relative">
-                <div class="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
+              <div className="front h-full relative">
+                <div className="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
                   Lên đời ôtô mới trong chớp mắt nhờ khoản vay thế chấp với hạn
                   mức cho vay lên đến 85%, kỳ hạn tối đa đến 8 năm. Thời gian
                   phê duyệt khoản vay nhanh nhất thị trường chỉ trong 05 phút.
@@ -98,7 +98,7 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  class="more"
+                  className="more"
                   href="/vaykinhdoanhthechap"
                   className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
                 >
@@ -117,8 +117,8 @@ function SliderHome() {
                   className="card card-front card-back"
                 />
               </div>
-              <div class="front h-full relative">
-                <div class="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
+              <div className="front h-full relative">
+                <div className="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
                   Dễ dàng sở hữu ngôi nhà mơ ước của riêng mình với các chủ đầu
                   tư bất động sản lớn trên thị trường là đối tác chiến lược của
                   VPBank trong nhiều năm qua và được áp dụng nhiều chương trình
@@ -129,7 +129,7 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  class="more"
+                  className="more"
                   href="/vaykinhdoanhthechap"
                   className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
                 >
@@ -148,8 +148,8 @@ function SliderHome() {
                   className="card card-front card-back"
                 />
               </div>
-              <div class="front h-full relative">
-                <div class="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
+              <div className="front h-full relative">
+                <div className="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
                   Tận hưởng cuộc sống tiện nghi – Thỏa thích chi tiêu, mua sắm
                   và xây sửa nhà mà không cần phải chờ đợi tiết kiệm đủ tiền.
                 </div>
@@ -158,7 +158,7 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  class="more"
+                  className="more"
                   href="/vaykinhdoanhthechap"
                   className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
                 >
@@ -177,8 +177,8 @@ function SliderHome() {
                   className="card card-front card-back"
                 />
               </div>
-              <div class="front h-full relative">
-                <div class="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
+              <div className="front h-full relative">
+                <div className="bg-transparent font-semibold text-[1.5rem] absolute top-5 left-5 right-5 text-gray-50">
                   Dùng càng nhiều sản phẩm, giảm càng sâu lãi suất khi tham gia
                   Combo Business
                 </div>
@@ -187,7 +187,7 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  class="more"
+                  className="more"
                   href="/vaykinhdoanhthechap"
                   className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
                 >
