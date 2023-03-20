@@ -1,10 +1,22 @@
 import { Form, Input, Slider } from "antd";
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const CalcMoneyRent = ({ form }) => {
+  const location = useLocation();
   const [moneyRent, setMoneyRent] = useState(100000000);
   const [years, setYears] = useState(1);
-
+  const [calc, setCalc] = useState(0);
+  const [dataCalc, setDataCalc] = useState(calc);
+  useEffect(() => {
+    if (location.pathname === "/vaykinhdoanhthechap") {
+      setCalc(Math.round((0.9 * moneyRent) / (years * 12)));
+    } else {
+      setCalc(
+        Math.round(moneyRent / (years * 12) + (0.9 * moneyRent) / (years * 12))
+      );
+    }
+  }, [location.pathname]);
   useEffect(() => {
     form?.setFieldsValue({
       moneyRent: formatCurrencyInput(moneyRent),
@@ -65,6 +77,16 @@ const CalcMoneyRent = ({ form }) => {
       window.removeEventListener("resize", resize);
     };
   }, []);
+  //Tính tiền
+  useEffect(() => {
+    if (location.pathname === "/vaykinhdoanhthechap") {
+      setDataCalc(Math.round((0.9 * moneyRent) / (years * 12)));
+    } else {
+      setDataCalc(
+        Math.round(moneyRent / (years * 12) + (0.9 * moneyRent) / (years * 12))
+      );
+    }
+  }, [years, moneyRent, location.pathname]);
 
   return (
     <div className="px-10 571px:px-0">
@@ -185,7 +207,7 @@ const CalcMoneyRent = ({ form }) => {
             <Input
               suffix="VNĐ"
               disabled
-              value={formatCurrencyInput(moneyRent)}
+              value={formatCurrencyInput(dataCalc)}
               className="h-[4.7rem] text-[1.6rem]"
             />
           </Form.Item>
