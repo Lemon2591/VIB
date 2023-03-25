@@ -91,7 +91,7 @@ const CalcMoneyRent = ({ form }) => {
   return (
     <div className="px-10 571px:px-0">
       <div className="text-left py-[1.6rem]">
-        <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#1e4a84]">
+        <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#141ed2]">
           Công cụ tính khoản vay (tham khảo)
         </p>
       </div>

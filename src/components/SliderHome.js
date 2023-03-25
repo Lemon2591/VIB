@@ -36,15 +36,15 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  className="more"
+                  // className="more"
                   href="/vaykinhdoanhthechap"
-                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
+                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap more more"
                 >
                   Tìm hiểu thêm
                 </a>
               </div>
             </div>
-            <p className="group-hover:text-[#1eb14f]">Vay mua nhà đất</p>
+            <p className="group-hover:text-[#141ed2]">Vay mua nhà đất</p>
           </NavLink>
           <NavLink to="/vaykinhdoanhthechap" className="slider-card-item group">
             <div className="card backface w-[24rem] h-[32rem] rounded-md overflow-hidden">
@@ -66,15 +66,14 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  className="more"
                   href="/vaykinhdoanhthechap"
-                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
+                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap more"
                 >
                   Tìm hiểu thêm
                 </a>
               </div>
             </div>
-            <p className="group-hover:text-[#1eb14f]">
+            <p className="group-hover:text-[#141ed2]">
               Vay kinh doanh thế chấp
             </p>
           </NavLink>
@@ -98,15 +97,14 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  className="more"
                   href="/vaykinhdoanhthechap"
-                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
+                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap more"
                 >
                   Tìm hiểu thêm
                 </a>
               </div>
             </div>
-            <p className="group-hover:text-[#1eb14f]">Vay mua ô tô</p>
+            <p className="group-hover:text-[#141ed2]">Vay mua ô tô</p>
           </NavLink>
           <NavLink to="/vaymuanhaduan" className="slider-card-item group">
             <div className="card backface w-[24rem] h-[32rem] rounded-md overflow-hidden">
@@ -129,15 +127,14 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  className="more"
                   href="/vaykinhdoanhthechap"
-                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
+                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap more"
                 >
                   Tìm hiểu thêm
                 </a>
               </div>
             </div>
-            <p className="group-hover:text-[#1eb14f]">Vay mua nhà dự án</p>
+            <p className="group-hover:text-[#141ed2]">Vay mua nhà dự án</p>
           </NavLink>
           <NavLink to="/vaytieudungthechap" className="slider-card-item group">
             <div className="card backface w-[24rem] h-[32rem] rounded-md overflow-hidden">
@@ -158,15 +155,14 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  className="more"
                   href="/vaykinhdoanhthechap"
-                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
+                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap more"
                 >
                   Tìm hiểu thêm
                 </a>
               </div>
             </div>
-            <p className="group-hover:text-[#1eb14f]">Vay tiêu dùng thế chấp</p>
+            <p className="group-hover:text-[#141ed2]">Vay tiêu dùng thế chấp</p>
           </NavLink>
           <NavLink to="/combouudai" className="slider-card-item group">
             <div className="card backface w-[24rem] h-[32rem] rounded-md overflow-hidden">
@@ -187,15 +183,14 @@ function SliderHome() {
                   alt="image-product"
                 ></img>
                 <a
-                  className="more"
                   href="/vaykinhdoanhthechap"
-                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap"
+                  className="font-semibold text-[1.6rem] absolute bottom-10 left-1/2 -translate-x-1/2 px-5 py-2 rounded-3xl border-2 border-solid border-white text-white whitespace-nowrap more"
                 >
                   Tìm hiểu thêm
                 </a>
               </div>
             </div>
-            <p className="group-hover:text-[#1eb14f]">
+            <p className="group-hover:text-[#141ed2]">
               Combo ưu đãi sản phẩm cho vay
             </p>
           </NavLink>

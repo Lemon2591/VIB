@@ -112,7 +112,7 @@ const FormInfo = ({ finalPage }) => {
         <Form form={form} onFinish={sendEmail}>
           <div className="px-10 571px:px-0">
             <div className="flex justify-start items-center gap-x-3">
-              <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#1e4a84]">
+              <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#141ed2]">
                 Thông tin khách hàng
               </p>
               <span className="font-light italic text-[#ff0000]">*</span>
@@ -209,7 +209,7 @@ const FormInfo = ({ finalPage }) => {
             </div>
           </div>
           <div className="text-left px-10 571px:px-0">
-            <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#1e4a84]">
+            <p className="font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem] text-[#141ed2]">
               Thông tin khoản vay
             </p>
             <div className="grid 571px:grid-cols-2 md:grid-cols-4 gap-x-3">
@@ -323,7 +323,7 @@ const FormInfo = ({ finalPage }) => {
           {finalPage && <LoanInfo className="text-center mx-auto " />}
           <button
             htmlType="submit"
-            className="flex items-center mb-[0.8rem] mt-[1.6rem] font-semibold text-center mx-auto text-[1.6rem] px-[4.8rem] rounded-[2.6rem] h-[4.8rem] z-10 bg-[linear-gradient(80deg,_#233f82,_#1fb14f_80%)] text-white"
+            className="flex items-center mb-[0.8rem] mt-[1.6rem] font-semibold text-center mx-auto text-[1.6rem] px-[4.8rem] rounded-[2.6rem] h-[4.8rem] z-10 bg-[linear-gradient(80deg,_#eb2d4b,_#141ed2_100%)] text-white"
           >
             Đăng ký
           </button>
