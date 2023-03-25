@@ -6,7 +6,7 @@ function NavHome() {
     <div className="nav-home-container">
       <div className="nav-home-content">
         <div className="logo-img">
-          <img src={Logo} alt="logo" />
+          <img src="https://www.mbbank.com.vn/images/logo.png" alt="logo" />
         </div>
       </div>
     </div>

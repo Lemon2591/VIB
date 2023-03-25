@@ -12,7 +12,7 @@ const HouseLandPage = ({ pageData }) => {
           <h1 className="font-bold mb-[1.6rem] leading-[8rem] text-gradient text-[4.8rem] md:text-[6rem] mt-0">
             Lợi ích vay vốn
           </h1>
-          <p className="text-[#1e4a84] font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem]">
+          <p className="text-[#141ed2] font-bold mb-[1.6rem] leading-[3.6rem] text-[2.8rem]">
             Lãi suất chỉ từ 10%/năm
           </p>
         </div>

@@ -54,7 +54,11 @@ const Nav = () => {
   };
   return (
     <div className="px-4 960px:px-0 flex flex-row  960px:flex-col justify-between 960px:justify-center items-center pt-[0.4rem] pb-[0.8rem] ">
-      <img src={Logo} className="w-[12.6rem]" alt="xxx" />
+      <img
+        src="https://image.talentnetwork.vn/mbbank//rws//logo_03_1572340988.png"
+        className="w-[12.6rem]"
+        alt="xxx"
+      />
       <div className="menu-icon md:hidden" onClick={handleOpenMenu}>
         <div className={`line line1 ${showMenu && "change"}`}></div>
         <div className={`line line2 ${showMenu && "change"}`}></div>
