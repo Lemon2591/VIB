@@ -4,6 +4,7 @@ import App from "./App";
 import "./assets/css/base.css";
 import "./assets/css/index.css";
 import "./assets/css/main.css";
+import "swiper/css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
