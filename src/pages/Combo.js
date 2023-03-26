@@ -81,7 +81,7 @@ function Combo() {
       </div>
       {/* ---------------- */}
       <div className="cardProduct flex mx-auto md:px-2 px-4 md:w-auto md:gap-8 gap-4 max-h-[288px] max-w-max overflow-hidden mobile-combo">
-        <div className="cardProductItem max-w-[256px] flex flex-col rounded-lg bg-[#F0F8FF]">
+        <div className="cardProductItem max-w-[256px] flex-col rounded-lg bg-[#F0F8FF]">
           <div
             className="h-[144px] bg-cover bg-no-repeat overflow-hidden rounded-t-lg flex-shrink-0"
             style={{
@@ -89,7 +89,7 @@ function Combo() {
                 "url(https://vaythechap.vpbank.com.vn/media/public/2022/07/29/a755bd39-2d4f-4678-a2aa-3c33cf35eb15.png)",
             }}
           ></div>
-          <div className="flex h-[144px] flex-col px-3 justify-between">
+          <div className=" h-[144px] flex-col px-3 justify-between">
             <div className="text-gradient-color-2 text-center mt-2 mb-0 text-[2rem] font-bold flex-shrink-0">
               Vay tiêu dùng tín chấp cá nhân
             </div>
@@ -121,7 +121,7 @@ function Combo() {
             </div>
           </div>
         </div>
-        <div className="cardProductItem max-w-[256px] flex flex-col rounded-lg bg-[#F0F8FF]">
+        <div className="cardProductItem max-w-[256px] flex-col rounded-lg bg-[#F0F8FF]">
           <div
             className="h-[144px]  bg-cover bg-no-repeat overflow-hidden rounded-t-lg flex-shrink-0"
             style={{
@@ -129,7 +129,7 @@ function Combo() {
                 "url(https://vaythechap.vpbank.com.vn/media/public/2022/07/29/e3af6691-4749-4f47-9b4f-130347732bc3.png)",
             }}
           ></div>
-          <div className="flex h-[144px] flex-col px-3 justify-between">
+          <div className="h-[144px] flex-col px-3 justify-between">
             <div className="text-gradient-color-2 text-center mt-2 mb-0 font-bold flex-shrink-0 text-[2rem]">
               Bảo hiểm nhân thọ
             </div>
@@ -161,7 +161,7 @@ function Combo() {
             </div>
           </div>
         </div>
-        <div className="cardProductItem max-w-[256px] flex flex-col rounded-lg bg-[#F0F8FF]">
+        <div className="cardProductItem max-w-[256px]  flex-col rounded-lg bg-[#F0F8FF]">
           <div
             className="h-[144px]  bg-cover bg-no-repeat overflow-hidden rounded-t-lg flex-shrink-0"
             style={{
@@ -169,7 +169,7 @@ function Combo() {
                 "url(https://vaythechap.vpbank.com.vn/media/public/2022/07/29/873b4595-459f-491c-80c3-a88517f9d162.png)",
             }}
           ></div>
-          <div className="flex h-[144px] flex-col px-3 justify-between">
+          <div className=" h-[144px] flex-col px-3 justify-between">
             <div className="text-gradient-color-2 text-center mt-2 mb-0 font-bold flex-shrink-0 text-[2rem]">
               Tài khoản thanh toán VPBank
             </div>
@@ -201,7 +201,7 @@ function Combo() {
             </div>
           </div>
         </div>
-        <div className="cardProductItem max-w-[256px] flex flex-col rounded-lg bg-[#F0F8FF]">
+        <div className="cardProductItem max-w-[256px]  flex-col rounded-lg bg-[#F0F8FF]">
           <div
             className="h-[144px]  bg-cover bg-no-repeat overflow-hidden rounded-t-lg flex-shrink-0"
             style={{
@@ -209,7 +209,7 @@ function Combo() {
                 "url(https://vaythechap.vpbank.com.vn/media/public/2022/07/29/b64d7fa4-81a1-4977-9af4-05600bd732f0.png)",
             }}
           ></div>
-          <div className="flex h-[144px] flex-col px-3 justify-between">
+          <div className=" h-[144px] flex-col px-3 justify-between">
             <div className="text-gradient-color-2 text-center mt-2 mb-0 font-bold flex-shrink-0 text-[2rem]">
               Thẻ tín dụng VPBank
             </div>
